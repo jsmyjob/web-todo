@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import AppHeader from './components/app-header';
+import SearchBar from './components/search-bar';
+import TodoList from './components/todo-list';
 
 const App = () => {
     return (
@@ -8,28 +11,6 @@ const App = () => {
             <SearchBar />
             <TodoList />
         </div>
-    )
-}
-
-const AppHeader = () => {
-    return (
-        <h1>Todo App</h1>
-    )
-}
-
-const SearchBar = () => {
-    return (
-        <input placeholder="search"/>
-    )
-}
-
-const TodoList = () => {
-    return (
-        <ul>
-            <li>Todo 1</li>
-            <li>Todo 2</li>
-            <li>Todo 3</li>
-        </ul>
     )
 }
 
